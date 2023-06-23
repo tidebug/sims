@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <form th:action="@{/do_forget}">
+            <tr>
+                <th>电子邮箱</th>
+                <td>
+                    <input type="email" name="email">
+                </td>
+                <td>
+                    <a th:href="@{/do_forget}">
+                        <button>发送验证码</button>
+                    </a>
+                </td>
+
+            </tr>
+        
+
+    </table>
+
+</body>
+
+</html>

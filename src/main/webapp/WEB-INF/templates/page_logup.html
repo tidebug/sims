@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<table>
+    <form th:action="@{/do_logup}" method="post">
+    <tr>
+        <th>账户名</th>
+        <td><input type="text" name="stu_ref"></td>
+    </tr>
+    <tr>
+        <th>密码</th>
+        <td><input type="password" name="stu_passwd"></td>
+    </tr>
+    <tr>
+        <th>电子邮箱</th>
+        <td><input type="email" name="stu_email"></td>
+    </tr>
+    <tr>
+
+        <td>
+            <button type="submit">注册</button>
+        </td>
+
+    </tr>
+    </form>
+</table>
+
+</body>
+</html>

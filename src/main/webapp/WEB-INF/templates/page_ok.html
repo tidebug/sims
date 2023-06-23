@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+</head>
+<body>
+<hr>
+<h4>这是一条水平分割线</h4>
+<h1>你的请求已被处理 </h1>
+<h3 >
+    <a th:href="@{/}">
+        <button style="font-size: 15px">回到登录页面</button>
+    </a>
+    <a th:href="@{/page_index}">
+        <button style="font-size: 15px">回到操作面板</button>
+    </a>
+    <a th:href="@{/page_add}">
+        <button style="font-size: 15px">回到添加学生页面</button>
+    </a>
+    <a th:href="@{/page_delete}">
+        <button style="font-size: 15px">回到删除学生页面</button>
+    </a>
+    <a th:href="@{/page_update}">
+        <button style="font-size: 15px">回到修改学生页面</button>
+    </a>
+    <a th:href="@{/page_select}">
+        <button style="font-size: 15px">回到查询学生页面</button>
+    </a>
+</h3>
+</body>
+</html>

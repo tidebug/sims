@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table>
+        <form th:action="@{/do_login}" method="post">
+            <tr>
+                <th>账户名</th>
+                <td><input type="text" name="stu_ref" id="stu_ref"></td>
+
+            </tr>
+
+            <tr>
+                <th>密码</th>
+                <td><input type="password" name="stu_passwd" id="stu_passwd"></td>
+
+            </tr>
+
+            <tr>
+                <th>
+                    <button type="submit">登录</button>
+                </th>
+        </form>
+
+        <td>
+            <a th:href="@{/page_logup}">
+                <button>注册</button>
+            </a>
+        </td>
+        <td>
+
+
+            <a th:href="@{/page_forget}">
+                <button>忘记密码</button>
+            </a>
+
+        </td>
+
+        </tr>
+
+
+
+    </table>
+
+</body>
+
+</html>
